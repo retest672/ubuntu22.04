@@ -9,3 +9,6 @@ RUN DEBIAN_FRONTEND=noninteractive sudo apt-get install -y firefox-esr
 
 # Install xz-utils
 RUN sudo apt-get install -y xz-utils
+
+# Install snap store
+RUN sudo apt install snapd
