@@ -3,4 +3,7 @@
         // Path is relataive to the devcontainer.json file.
         "dockerfile": "Dockerfile"
     }
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {}
+    }
 }
