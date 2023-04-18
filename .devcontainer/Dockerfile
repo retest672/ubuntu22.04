@@ -5,4 +5,7 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
 RUN sudo apt-get update && sudo apt-get dist-upgrade
 
 # Install firefox-esr
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y firefox-esr
+RUN DEBIAN_FRONTEND=noninteractive sudo apt-get install -y firefox-esr
+
+# Install xz-utils
+RUN sudo apt-get install -y xz-utils
