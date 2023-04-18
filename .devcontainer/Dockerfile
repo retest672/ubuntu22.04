@@ -4,12 +4,6 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
 # Update all packages
 RUN sudo apt-get -y update && sudo apt-get -y dist-upgrade
 
-# Install xfce4
-RUN sudo apt-get install -y xfce4 xfce4-goodies
-
-# Install firefox-esr
-RUN DEBIAN_FRONTEND=noninteractive sudo apt-get install -y firefox-esr
-
 # Install xz-utils
 RUN sudo apt-get install -y xz-utils
 
