@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
 # Update all packages
 RUN sudo apt-get -y update && sudo apt-get -y dist-upgrade
 
-# Install firefox-esr
+# Install xfce4
 RUN sudo apt-get install -y xfce4 xfce4-goodies
 
 # Install firefox-esr
@@ -15,6 +15,9 @@ RUN sudo apt-get install -y xz-utils
 
 # Install snap store
 RUN sudo apt install -y snapd
+
+# Activate snapd service
+RUN sudo systemctl enable --now snapd.socket
 
 # Install noVNC
 RUN sudo snap install -y novnc
