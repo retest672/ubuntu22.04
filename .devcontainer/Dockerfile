@@ -1,3 +1,8 @@
-FROM mcr.microsoft.com/devcontainers/base:ubuntu
-# Install the xz-utils package
-RUN apt-get update && apt-get install -y xz-utils
+# Use Ubuntu 22.04 Image
+FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
+
+# Update all packages
+RUN sudo apt-get update && sudo apt-get dist-upgrade
+
+# Install firefox-esr
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y firefox-esr
