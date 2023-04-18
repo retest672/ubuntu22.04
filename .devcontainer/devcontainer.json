@@ -1,3 +1,6 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04"
+    "build": {
+        // Path is relataive to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    }
 }
